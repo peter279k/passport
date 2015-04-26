@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>‎資工四乙 畢旅感動大集合之我淚了</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/themes/front_end.css" />
+  <link rel="stylesheet" href="css/themes/jquery.mobile.icons.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+  <link href="css/alertify.css" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link href="css/jqm-datebox-1.4.5.css" rel="stylesheet">
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/alertify.js"></script>
+  <script src="js/index.js"></script>
+  <script src="js/jqm-datebox-1.4.5.js"></script>
+</head>
+<body>
+	<div id="main-page" data-role="page" data-theme="d">
+		<div data-role="header">
+			<h1>基本資料填寫</h1>
+		</div>
+		<div id="main-content" role="main" class="ui-content jqm-content jqm-fullwidth">
+			<h2 class="mytext2 center">‎資工四乙畢旅感動大集合之我淚了</h2>
+			<p class="mytext3">資料由彭信翰管理</p>
+			<h2>送出之後即視為同意<a href="data_protect.html" data-ajax="false">個資法!</a></h2>
+			<form id="passport-form">
+				<label for="myName">真實姓名: </label>
+					<input id="myName" type="text" maxlength="3">
+				<label for="myID">身分證字號: </label>
+					<input id="myID" type="text" maxlength="10">
+				<label for="myDate">出生年月日: </label>
+					<input type="date" data-role="datebox" data-theme="c" id="myDate"
+						data-options='{"defaultValue": "1992-01-01", "mode": "datebox", "overrideDateFormat": "%Y-%m-%d"}' />
+				<a id="pass-action" data-role="button" href="#">送出</a>
+			</form>
+		</div>
+	</div>
+</body>
